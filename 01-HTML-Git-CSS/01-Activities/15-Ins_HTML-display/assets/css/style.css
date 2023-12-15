@@ -50,3 +50,7 @@ section {
 .display-none {
   display: none;
 }
+.class-odd {
+  color: rgb(242, 6, 6);
+
+}
