@@ -52,5 +52,14 @@ section {
 }
 .class-odd {
   color: rgb(242, 6, 6);
+  font-weight: bold;
+
 
 }
+
+.class-even { 
+  color: rgb(44, 11, 136);
+  font-style: italic;
+  background-color: yellow;
+}
+
