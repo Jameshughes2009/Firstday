@@ -12,8 +12,10 @@ body {
   flex-direction: row;
   /* Centers along the main axis determined by flex-direction */
   justify-content: center;
-  /* Centers along the opposite axis */
+  /* Centers along the opposite axis
+  Along the X axis */
   align-items: center;
+  /* deals with items along the Y Axis */
   width: 90%;
   /* Uses the height of the viewport */
   height: 100vh;
