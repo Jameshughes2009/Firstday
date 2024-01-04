@@ -45,3 +45,6 @@ main {
   /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
   flex: 2 1 200px;
 }
+.card.camera header {
+  background-color: rgb(12, 153, 7);
+}
