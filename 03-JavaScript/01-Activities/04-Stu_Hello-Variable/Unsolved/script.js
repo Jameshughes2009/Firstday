@@ -9,3 +9,5 @@
 
 * It's done when I reassign the values of `personName`, `pets`, and `funFact` with my new partner's information and the logs in the console reflect the new values.
  */
+
+var personName="James"
