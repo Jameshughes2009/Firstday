@@ -27,4 +27,4 @@ names[3] = "Carter";
 console.log(names[3]);
 
 // We use the array's length property to determine how many elements are in the array
-console.log(names.length);
+console.log(names.length); // 3 + 1 = 4
