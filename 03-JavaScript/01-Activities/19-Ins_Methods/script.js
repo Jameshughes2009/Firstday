@@ -8,27 +8,27 @@ var myString = "Hello String";
 comparisonOperators.sort(); 
 
 //Logs sorted array
-console.log(comparisonOperators);
+console.log("sort", comparisonOperators);
 
 // Adds elements to end of an array. Takes in at least one parameter
 arithmeticOperators.push("%");
 
 //Logs array with element "%" added to end
-console.log(arithmeticOperators);
+console.log("push", arithmeticOperators);
 
 //Returns selected elements as a new array.
 var logicalOperatorsSliced = logicalOperators.slice(0,2);
 
 //Logs new array
-console.log(logicalOperatorsSliced);
+console.log("slice", logicalOperatorsSliced);
 
 // The original array is unchanged
-console.log(logicalOperators);
+console.log("og", logicalOperators);
 
 //String Methods
 //Replaces "String" with "World" and returns new string
-var myNewString = myString.replace("String", "World");
-console.log(myNewString);
+var myNewString = myString.replace("String", "deez nuts");
+console.log("replace", myNewString);
 
 //The original string is unchanged
 console.log(myString);

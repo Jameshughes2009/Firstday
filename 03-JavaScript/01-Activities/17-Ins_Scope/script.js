@@ -21,6 +21,8 @@ function sayGoodbye() {
   return;
 }
 
+console.log("outside to say by", goodbye)
+
 //This will throw an error
 var sayGoodbyeAgain = function () { 
   console.log(goodbye);

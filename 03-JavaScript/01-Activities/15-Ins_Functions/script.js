@@ -7,6 +7,8 @@ function declareHello() {
   return;
 }
 
+// expressHello here will make an error
+
 // This is a function expression
 var expressHello = function() { 
   console.log("Hello, I am a function expression.");
@@ -24,10 +26,14 @@ declareHello();
 // Functions can take parameters.
 // Parameters give a name to the data to be passed into the function
 function declareHelloAgain(x,y,z) { 
+  // x y z are function scoped
+  console.log ("func Vars" , x , y , z)
   console.log("Hello, my parameter's values are " + x + ", " + y + ", and " + z);
   console.log("-----------------------------------");
   return;
 }
+
+
 
 // Function arguments give parameters their values
 // Here the parameter x is given the value 7 when the function is called
