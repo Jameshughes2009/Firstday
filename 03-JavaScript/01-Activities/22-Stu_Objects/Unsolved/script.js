@@ -7,6 +7,11 @@ var customerDrink = {
 
 console.log("deez,", customerDrink.name);
 
+if (customerDrink.isReady) {
+    console.log("ass and tits")
+    // else if (!ready)
+} 
+
 /**
  *It's done when the `customerDrink` object has three properties that store the drink's name, the number of sugars, and a Boolean indicating whether the order is ready. 
 
@@ -17,3 +22,5 @@ console.log("deez,", customerDrink.name);
 * It's done when, if the order is not ready, the message `"Still in order queue"` logs. 
 
  */
+
+// ternary _> condition ? ifTrue : if false
