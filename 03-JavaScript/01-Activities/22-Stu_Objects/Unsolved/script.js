@@ -8,9 +8,11 @@ var customerDrink = {
 console.log("deez,", customerDrink.name);
 
 if (customerDrink.isReady) {
-    console.log("ass and tits")
+    console.log("ass and tits");
     // else if (!ready)
-} 
+} else {
+    console.log("still drinking");
+}
 
 /**
  *It's done when the `customerDrink` object has three properties that store the drink's name, the number of sugars, and a Boolean indicating whether the order is ready. 
