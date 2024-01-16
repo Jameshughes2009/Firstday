@@ -1,5 +1,7 @@
 // TODO: What does 'this' refer to?
-console.log(this);
+console.log(this); // gobal object -> 
+//Browser log window and termial
+// (->)log files (empty objects) 
 
 // TODO: What does 'this' refer to?
 function helloThis() { 
@@ -10,8 +12,9 @@ function helloThis() {
 var child = { 
    age: 10,
    ageTenYears: function() {
-       console.log(this.age + 10); 
+       console.log(this.age + 100); 
    }
+   //helloThat(); this keyword is global/winow
 };
 
 // TODO: What will this log? 
