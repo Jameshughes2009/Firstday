@@ -12,5 +12,5 @@ function showResponse(event) {
   submissionResponseEl.textContent = response;
 }
   
-// Add listener to submit element
+// Add listener to submit element (intrinsic call)
 submitEl.addEventListener("click", showResponse);
