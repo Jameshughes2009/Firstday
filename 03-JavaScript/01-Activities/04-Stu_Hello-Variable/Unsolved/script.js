@@ -11,3 +11,4 @@
  */
 
 var personName="James"
+console.log("The Goat name is" + personName)
