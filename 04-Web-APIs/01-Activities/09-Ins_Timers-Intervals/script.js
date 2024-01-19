@@ -5,7 +5,8 @@ var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
 var secondsLeft = 10;
-
+//SetInterval (what you want to hapening inside and the timer in ms)
+//SetTimeout (only happens onces in compareion to SetInterval)
 function setTime() {
   // Sets interval in variable
   var timerInterval = setInterval(function() {
@@ -19,7 +20,7 @@ function setTime() {
       sendMessage();
     }
 
-  }, 1000);
+  }, 1000); // # of millisecends
 }
 
 // Function to create and append colorsplosion image
