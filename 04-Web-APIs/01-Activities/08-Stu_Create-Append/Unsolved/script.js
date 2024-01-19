@@ -26,6 +26,8 @@ infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
+listEl.appendChild(li1)
+listEl.appendChild(li2)
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -34,4 +36,12 @@ nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
+listEl.setAttribute("style","background-color: #333333; padding: 20px;")
+li1.setAttribute("style", "color:white; padding: 5px; margin-left:35px; background-color:red;")
+
 // TODO: Add ordered list items containing four favorite foods
+li1.textContent = "pizza"
+li2.textContent = "fine"
+li1.textContent = "school"
+li1.textContent = "work"
+li1.textContent = "pizza"
