@@ -2,8 +2,11 @@ var outer = document.querySelector(".outer-div");
 var inner = document.querySelector(".inner-div");
 var button = document.querySelector(".button");
 
+//preventDefault -> stopPropigation
+
 function changeBlue(event) {
-  // event.stopPropagation();
+  // event.stopPropagation(); 
+  // onlt effect blue
   event.currentTarget.setAttribute(
     "style",
     "background-color: blue"
@@ -19,7 +22,7 @@ function changePurple(event) {
 }
 
 function changeOrange(event) {
-  // event.stopPropagation();
+  event.stopPropagation();
   event.currentTarget.setAttribute(
     "style",
     "background-color: #EE442F; color: white;"
