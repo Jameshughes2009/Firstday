@@ -5,6 +5,7 @@ var myUndefined;
 // A string is a series of characters and is surrounded by quotes 
 var myStringWelcome = "Hello World"; 
 var myStringPassword = "865Password!2020";
+var undefinedString = "Undefined"; //string
 
 // A number can be either an integer or a decimal  
 var myNumberInt = 100;
@@ -19,7 +20,7 @@ var isMyBooleanFalse = false;
 console.log(typeof myUndefined);
 
 // Logs number
-console.log(typeof myNumberInt); 
+console.log(typeof myNumberInt, myNumberInt); 
 
 // Logs boolean
 console.log(typeof true);
@@ -30,8 +31,12 @@ console.log(typeof "Howdy");
 // Pro-tip: JavaScript is loosely typed, so the type is tied to the value held in the variable, not the variable itself!
 // Logs number
 var myVariable = 33;
-console.log(typeof myVariable);
+console.log(typeof myVariable, myVariable);
 
 // myVariable is reassigned; Logs boolean
 myVariable = false;
-console.log(typeof myVariable);
+console.log(typeof myVariable, myVariable); // boolean, false
+
+myVariable = "true"
+
+console.log(typeof myVariable, myVariable);

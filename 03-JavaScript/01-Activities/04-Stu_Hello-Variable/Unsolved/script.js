@@ -26,3 +26,4 @@ funFact = "battles Kratos"
 
 console.log(personName, pets, funFact);
 console.log(personName + " " + pets + " " + funFact)
+// , in string will add 
