@@ -4,15 +4,14 @@ function declareHello() {
   console.log("Hello, I am a function declaration.");
   console.log("-----------------------------------");
   // Return stops the execution of a function
-  return;
+return;
 }
 
 // This is a function expression
 var expressHello = function() { 
   console.log("Hello, I am a function expression.");
   console.log("-----------------------------------");
-  return;
-};
+return};
 
 // Functions must be called to execute
 declareHello(); 
