@@ -18,7 +18,9 @@ var planet = {
 
 // To access a property's value that is a string, number or boolean, use the object's name and the associated key	
 // Uses dot notation and logs "Earth"	
-console.log(planet.name);
-	
+console.log("name", planet.name);
+console.log("age", planet.age);
+console.log("plant", planet)
+
 // Uses bracket notation and logs "Earth"
 console.log(planet["name"]);

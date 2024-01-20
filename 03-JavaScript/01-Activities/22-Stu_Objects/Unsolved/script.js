@@ -2,7 +2,7 @@
 var customerDrink = {
     name: "tea",
     sugars: 2,
-    isReady: true,
+    isReady: false,
 };
 
 console.log("deez,", customerDrink.name);

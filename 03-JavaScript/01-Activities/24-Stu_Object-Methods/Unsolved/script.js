@@ -1,4 +1,4 @@
-var chosenPet = "Mouser"; //string
+var chosenPet = "Bernice"; //string
 
 var shelter = {
   dogs: ["Mackie", "Bernice", "Cookie Monster", "Spot"],
@@ -10,7 +10,7 @@ var shelter = {
 
 //Debug the code below 
 function dogMessage() {
-   console.log("Congrats! " + chosenPet.Lulu + ", a great dog, is available for adoption!");
+   console.log("Congrats! " + chosenPet.lulu + ", a great dog, is available for adoption!");
    apptMessage();
 }
 
