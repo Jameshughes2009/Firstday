@@ -10,5 +10,19 @@
 * It's done when I reassign the values of `personName`, `pets`, and `funFact` with my new partner's information and the logs in the console reflect the new values.
  */
 
-var personName="James"
+// you can always use a + or , for stinging
+
+var personName = "James"
+var pets = "2"
+var funFact = "I am a failure in life"
+
 console.log("The Goat name is" + personName)
+console.log("I have", pets ,"pets")
+console.log("Fun Fact:", funFact)
+
+personName = "James Hughes"
+pets = 3
+funFact = "battles Kratos"
+
+console.log(personName, pets, funFact);
+console.log(personName + " " + pets + " " + funFact)
