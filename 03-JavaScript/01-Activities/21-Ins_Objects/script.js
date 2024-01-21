@@ -14,6 +14,7 @@ var planet = {
  * object = {}
  * 
  * key: value 
+ * obj = {key1: val1, Key2: val2,....}
  */
 
 // To access a property's value that is a string, number or boolean, use the object's name and the associated key	
