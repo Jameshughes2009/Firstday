@@ -1,26 +1,26 @@
 
-// const passwordText = document.getElementById("#generate")
-// const length = 12;
+const passwordBox = document.getElementById("test")
+const length = 12;
 
-// const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
-// const number = "0123456789";
+const number = "0123456789";
 
-// const symbol = "@#!$%^&*())_{}[]-+=";
+const symbol = "@#!$%^&*())_{}[]-+=";
 
-// const allChars = upperCase + lowerCase + number + symbol;
+const allChars = upperCase + lowerCase + number + symbol;
 
-// function createPassword(){
-//   let password = "";
-//   password += upperCase[Math.floor(Math.random() * upperCase.length)];
-//   password += lowerCase[Math.floor(Math.random() * upperCase.length)];
-//   password += number[Math.floor(Math.random() * upperCase.length)];
-//   password += symbol[Math.floor(Math.random() * upperCase.length)]
+function createPassword(){
+  let password = "";
+  password += upperCase[Math.floor(Math.random() * upperCase.length)];
+  password += lowerCase[Math.floor(Math.random() * upperCase.length)];
+  password += number[Math.floor(Math.random() * upperCase.length)];
+  password += symbol[Math.floor(Math.random() * upperCase.length)]
 
-//   while(length > password.length) {
-//     password += allChars[Math.floor(Math.random() * allChars.length)];
-//   }
-//   passwordText.value = password; 
-// }
+  while(length > password.length) {
+    password += allChars[Math.floor(Math.random() * allChars.length)];
+  }
+  passwordText.value = password; 
+}
