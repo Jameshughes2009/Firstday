@@ -13,11 +13,13 @@ const symbol = "@#!$%^&*())_{}[]-+=";
 const allChars = upperCase + lowerCase + number + symbol;
 
 function createPassword(){
+    var passwordLength = prompt("You password will be as least 8 character")
   let password = "";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
   password += lowerCase[Math.floor(Math.random() * upperCase.length)];
   password += number[Math.floor(Math.random() * upperCase.length)];
   password += symbol[Math.floor(Math.random() * upperCase.length)]
+  console.log(passwordLength)
 
   while(length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
