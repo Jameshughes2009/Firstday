@@ -1,5 +1,5 @@
 
-const passwordBox = document.getElementById("test")
+const passwordBox = document.getElementById("password")
 const length = 12;
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -22,5 +22,5 @@ function createPassword(){
   while(length > password.length) {
     password += allChars[Math.floor(Math.random() * allChars.length)];
   }
-  passwordText.value = password; 
+  passwordBox.value = password; 
 }
