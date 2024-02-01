@@ -19,14 +19,17 @@ function handleFormSubmit(event) {
 
   // Loop through checked options to store in array
   $.each(checkedEl, function () {
+    //this -> items that were checked -> checkedEl
     selected.push($(this).val());
   });
   console.log('Toppings: ', selected.join(', '));
 
   // Clear input fields
+  // $(element[attrName=attrValue])
   $('input[type="text"]').val('');
   $('input[type="email"]').val('');
   $('input[type="checkbox"]').prop('checked', false);
+    //used to uncheck a checked box after submit
 }
 
 // Submit event on the form
