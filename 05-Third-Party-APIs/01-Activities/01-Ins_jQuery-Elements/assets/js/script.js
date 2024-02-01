@@ -17,6 +17,7 @@ titleEl.addClass('p-5');
 
 // titleEl.style.border = "rgb(122, 242, 242) 3px solid";
 titleEl.css('border', 'rgb(122, 242, 242) 5px solid');
+titleEl.css('background-color', "green");
 
 // rootEl.appendChild(titleEl);
 rootEl.append(titleEl);
