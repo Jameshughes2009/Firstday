@@ -9,5 +9,5 @@ console.log(rootEl.children("ul"))
 
 rootEl.children("ul").eq(2).children().eq(0).text("O")
 
-rootEl.children("ul").eq(1).children().eq(2).text("X")
+rootEl.children("ul").eq(2).children().eq(2).text("X")
 
