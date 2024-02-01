@@ -8,7 +8,7 @@ function getPasswordCharacter() {
 
 // Returns a string of concatenated characters of length num
 function passwordGenerator(num) {
-  var password = '';
+  var password = '';// this will add text before the generated passoword
   for (var i = 0; i < num; i++) {
     password += getPasswordCharacter();
   }

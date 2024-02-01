@@ -12,7 +12,7 @@ titleEl.text("~ Carol Dweck");
 
 
 // TODO: Add the class `plain` to the author element
-titleEl.attr("class", "pain");
+titleEl.attr("class", "plain");
 console.log(titleEl);
 
 // TODO: Create a new `<h1>` element that will store an author's quote and assign it to new variable

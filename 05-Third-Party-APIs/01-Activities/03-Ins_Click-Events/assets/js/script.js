@@ -33,5 +33,5 @@ lotteryButtonEl.on('click', function () {
 
 // Click event causes refresh
 refreshButtonEl.on('click', function () {
-  location.reload();
+  location.reload(); // same as "window.location.reload"
 });
