@@ -1893,3 +1893,7 @@ label form [type='radio'] {
     align-items: center;
   }
 }
+.avatar-img {
+  height: 100ox;
+  width: 100px;
+}
