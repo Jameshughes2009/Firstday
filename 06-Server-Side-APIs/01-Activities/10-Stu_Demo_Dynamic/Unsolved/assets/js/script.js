@@ -18,17 +18,20 @@ function getApi() {
         // console.log(data[i]);
         //createElement ->textContent->appendChild
 
-        var userName = document.createElement("p")
-        var userUrl = document.createElement("p")
+        // var userName = document.createElement("p")
+        var userName = document.createElement("a")
+        // var userUrl = document.createElement("a")
         var userImage = document.createElement("img")
 
         userName.textContent = data[i].login;
-        userUrl.textContent = data[i].html_url
+        userName.href = data[i].html_url
+
+
         userImage.src = data[i].avatar_url;
         userImage.className ="avatar-img";
 
         userContainer.append(userName)
-        userContainer.append(userUrl)
+        // userContainer.append(userUrl)
         userContainer.append(userImage)
 
         var followersUrl = data[i].followers_url;
