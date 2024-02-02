@@ -30,6 +30,15 @@ function getApi() {
         userContainer.append(userName)
         userContainer.append(userUrl)
         userContainer.append(userImage)
+
+        var followersUrl = data[i].followers_url;
+        fetch(followersUrl)
+          .then(function(response){
+            return response.json();
+          }) 
+          .then (function (followerData){
+            //Needs review 
+          })
       }
     });
 }
