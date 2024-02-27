@@ -5,9 +5,9 @@
 var person = {
   name: "Hodor",
   saySomething: function() {
-    console.log(this.name + " is thinking...");
+    console.log("3",this.name + " is thinking...");
     setTimeout(function() {
-      console.log(this.name + "!");
+      console.log("4", this.name + "!");
     }, 100);
   }
 };
@@ -20,8 +20,8 @@ person.saySomething(); // prints "Hodor is thinking..."
 var person = {
   name: "Hodor",
   saySomething: function() {
-    console.log(this.name + " is thinking...");
-    setTimeout(() => console.log(this.name + "!"), 100);
+    console.log("1",this.name + " is thinking...");
+    setTimeout(() => console.log("2",this.name + "!"), 100);
   }
 };
 
