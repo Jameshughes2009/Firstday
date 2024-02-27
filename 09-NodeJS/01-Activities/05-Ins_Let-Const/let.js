@@ -25,7 +25,7 @@ console.log(j); // prints 42 // class time 2hr,17m
 
 // ==========================================================================
 
-// 2. When using while loops, any values we create inside exist outside of the while-loop block
+// 2. When using while loops, any values we create inside exist outside of the while-loop block - test
 
 // var count = 0;
 
