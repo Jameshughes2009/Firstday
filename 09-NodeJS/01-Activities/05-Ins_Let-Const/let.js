@@ -4,9 +4,11 @@ for (var i = 0; i < 5; i++) {
   console.log(i);
 }
 
-console.log(i); // Prints 5
+console.log(i); // Prints 5 //always have variable values named differently to avoid confusion
 
 // When using let, our counter is not defined outside of the for-loop block
+
+//let will allow you to change the value and will be the alternative for const
 
 let x = 42;
 
