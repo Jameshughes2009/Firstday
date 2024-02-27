@@ -18,7 +18,7 @@ for (let j = 0; j < 5; j++) {
   console.log(x);
 }
 
-console.log(j); // ReferenceError: j is not defined
+console.log(j); // ReferenceError: j is not defined -test again 
 
 let j = 42;
 console.log(j); // prints 42 // class time 2hr,17m
