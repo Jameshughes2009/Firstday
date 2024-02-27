@@ -9,6 +9,7 @@ console.log(i); // Prints 5 //always have variable values named differently to a
 // When using let, our counter is not defined outside of the for-loop block
 
 //let will allow you to change the value and will be the alternative for const
+// var and let are interchangeable
 
 let x = 42;
 
@@ -20,7 +21,7 @@ for (let j = 0; j < 5; j++) {
 console.log(j); // ReferenceError: j is not defined
 
 let j = 42;
-console.log(j); // prints 42
+console.log(j); // prints 42 // class time 2hr,17m
 
 // ==========================================================================
 
