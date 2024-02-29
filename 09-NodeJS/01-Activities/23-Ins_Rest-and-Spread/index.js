@@ -25,9 +25,9 @@ console.log(add(1, 2, 3, 4, 5)); // => 3
 // console.log(howManyArgs(0, 1)); // You have passed 2 arguments.
 // console.log(howManyArgs("argument!", null, ["one", 2, "three"], 4)); // You have passed 4 arguments.
 
-// 3. Spread Operator
+// 3. Spread Operator - break open values of array
 const dragons = ["Drogon", "Viserion", "Rhaegal"];
 const weapons = ["dragonglass", ...dragons, "wildfire"]; // notice the spread operator ...dragons
 
 // Uncomment below to see how spread operators work!
-// console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal", "wildfire"]
+console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal", "wildfire"]
