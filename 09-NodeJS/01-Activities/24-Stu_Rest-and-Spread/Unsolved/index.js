@@ -21,8 +21,8 @@ const additionSpread = (...array) => {
   return array.reduce((a, b) => a + b, 0);
 };
 
-// TODO: What do you expect to be logged in the console?
-console.log(additionSpread(1, 2, 3));
+// // TODO: What do you expect to be logged in the console?
+// console.log(additionSpread(1, 2, 3));
 
 // TODO: What do you expect to be logged in the console?
 console.log(additionSpread(1, 2, 3, 4, 100));

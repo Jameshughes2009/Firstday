@@ -7,15 +7,15 @@ console.log(add(1, 2, 3, 4, 5)); // => 3
 // 1. With rest operator
 // Uncomment this to see how rest operators work!
 
-// function add(...nums) {
-//   let sum = 0;
-//   for (let num of nums) sum += num;
-//   return sum;
-// }
+function add(...nums) {
+  let sum = 0;
+  for (let num of nums) sum += num;
+  return sum;
+}
 
-// console.log(add(1)); // => 1
-// console.log(add(3, 3)); // => 6
-// console.log(add(1, 1, 4, 5)); // => 11
+console.log(add(1)); // => 1
+console.log(add(3, 3)); // => 6
+console.log(add(1, 1, 4, 5)); // => 11
 
 // 2. Uncomment to see how rest operators store values!
 // function howManyArgs(...args) {
