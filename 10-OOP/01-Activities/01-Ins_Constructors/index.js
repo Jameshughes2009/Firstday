@@ -3,6 +3,7 @@
 //   name: 'Rex',
 //   age: 2,
 //   breed: 'Bulldog'
+//   status: "spayed"
 // }
 
 // Constructor function can be used to create objects containing properties "name", "age", "breed", and the "nap()" function
