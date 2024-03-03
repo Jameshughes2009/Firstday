@@ -14,8 +14,8 @@ var createGreeting = (message, name) => {
 //(implicit retirn - not recommended )
 var createGreeting = (message, name) => message + ", " + name + "!";
 
-// If an arrow function only has one parameter, we can omit the parens () around the single parameter
-var greet = (greeting) => console.log("greeting is",greeting);
+// If an arrow function only has one parameter, we can omit the parens () around the single parameter in this case greeting not used well for mutilple variables
+var greet = greeting => console.log("greeting istest",greeting);
 
 // We call arrow functions the same way as we call regular functions
 var greeting = createGreeting("Hello", "Angie");
