@@ -33,7 +33,7 @@ MySQL Shell is an advanced client and code editor for MySQL located right in our
     ```sh
     quit
     ```
-    <!-- UofTcoding12!@ - password for my SQL 
+    <!--  - password for my SQL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     Beginning configuration step: Writing configuration file
 
 <!-- Saving my.ini configuration file...
@@ -125,3 +125,5 @@ Ended configuration step: Updating the Start menu link
 -->
 
 * If the `mysql --version` command returned an error, refer to the  [MySQL Docs Installing MySQL Shell](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html) for installing MySQL on your Mac, Windows on Linux machine.
+
+source
