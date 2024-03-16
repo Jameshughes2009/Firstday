@@ -8,6 +8,7 @@ const PORT = 3001;
 // Example: http://localhost:3001/images/cat.jpg
 
 app.use(express.static('public'));
+//^this is the best method for loading up are files
 
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)

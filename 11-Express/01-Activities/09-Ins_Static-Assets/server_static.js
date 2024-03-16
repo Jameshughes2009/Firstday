@@ -1,5 +1,8 @@
+// Note: separate out "require" and regular variables
 const express = require('express');
 const app = express();
+
+//Example - Regular varibales
 const PORT = 3001;
 const path = require('path');
 
