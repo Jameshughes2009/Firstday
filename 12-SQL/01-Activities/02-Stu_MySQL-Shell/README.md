@@ -38,3 +38,15 @@ Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+## Notes from Class
+SQL make it easy to handle large amounts of data and scale up quickly
+
+- A relational database organizes data into tables. A Table holds a group of data and is divided into rows and columns. The tables can be linked to form relationships
+
+- Keys identify rows of data in a table. By matching Keys between two tables a relationship is formed!!
+
+### SQL Queries
+- A SQL query interacts with data in a database using the names of tables columns, and relationships betweeen tables. 
+- Queries enable us to supply data to the front end to build sites that can interact with lots of data quickly and easily
