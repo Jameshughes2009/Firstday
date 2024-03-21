@@ -21,4 +21,5 @@ VALUES
     ( 2, "orange"),
     ( 3, "banana");
     
+SELECT * FROM produce;
     
