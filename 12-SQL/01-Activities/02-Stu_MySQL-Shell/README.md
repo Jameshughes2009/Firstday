@@ -43,6 +43,8 @@ Use [Google](https://www.google.com) or another search engine to research this.
 ## Notes from Class
 SQL make it easy to handle large amounts of data and scale up quickly
 
+- tables can be linked based on data that is common to both of them
+
 - A relational database organizes data into tables. A Table holds a group of data and is divided into rows and columns. The tables can be linked to form relationships
 
 - Keys identify rows of data in a table. By matching Keys between two tables a relationship is formed!!

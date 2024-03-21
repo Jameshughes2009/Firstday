@@ -127,3 +127,5 @@ Ended configuration step: Updating the Start menu link
 * If the `mysql --version` command returned an error, refer to the  [MySQL Docs Installing MySQL Shell](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html) for installing MySQL on your Mac, Windows on Linux machine.
 
 source
+
+A relational database organizes data into tables
