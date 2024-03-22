@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS registrar_db;
 CREATE DATABASE registrar_db;
 
-USE registrar_db;
+USE registrar_db; -- each of the "create table section is where more info is add to the schema file(Class based set up for tables)"
 
 CREATE TABLE courses (
   id INT NOT NULL,
