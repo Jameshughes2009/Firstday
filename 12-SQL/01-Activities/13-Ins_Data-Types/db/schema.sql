@@ -5,7 +5,7 @@ USE course_db;
 
 CREATE TABLE courses (
   id INT NOT NULL,
-  course_title VARCHAR(30) NOT NULL,
+  course_title VARCHAR(30) NOT NULL, -- adding () will allow you yo add a chacter limit 
   course_description TEXT NOT NULL,
   active BOOLEAN NOT NULL,
   date_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
