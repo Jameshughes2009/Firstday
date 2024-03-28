@@ -1,0 +1,15 @@
+#misc
+.DS_Store
+.env
+
+#untracked
+**/03-Algorithms/**/Solved
+**/02-Challenge/Main
+
+#tracking
+**/*-Stu_*/Solved
+**/*-Stu_Mini-Project/Main
+
+#npm
+**/node_modules/
+**/package-lock.json
