@@ -40,3 +40,4 @@ const seedDatabase = async () => {
 
 seedDatabase();
 // Testing git push
+// test 2
