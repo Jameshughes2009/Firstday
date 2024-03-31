@@ -32,7 +32,7 @@ Book.init(
   {
     sequelize,
     timestamps: false,
-    freezeTableName: true,
+    freezeTableName: true, // used to remove s from table name
     underscored: true,
     modelName: 'book'
   }
