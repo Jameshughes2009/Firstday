@@ -22,5 +22,6 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+//much more efficent way to deal with errors
 
 module.exports = router;

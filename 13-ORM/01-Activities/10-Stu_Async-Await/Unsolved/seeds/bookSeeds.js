@@ -32,6 +32,8 @@ const seedDatabase = async () => {
   await Book.bulkCreate(bookSeedData);
 
   await Library.bulkCreate(librarySeedData);
-}
+
+  process.exit(0);
+};
 
 seedDatabase();
