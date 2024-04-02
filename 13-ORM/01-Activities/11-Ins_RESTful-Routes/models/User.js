@@ -13,10 +13,13 @@ User.init(
     },
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false, // make is so variable "username" in this case required before a post on postman
     },
     email: {
       type: DataTypes.STRING,
+      validate: {
+        isEmail: true, // needed to make it in email format
+      },
     },
     password: {
       type: DataTypes.STRING,
