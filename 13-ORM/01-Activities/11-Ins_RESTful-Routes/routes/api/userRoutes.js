@@ -20,6 +20,7 @@ router.post('/', async (req, res) => {
   } catch (err) {
     // 400 status code means the server could not understand the request
     res.status(400).json(err);
+    // this is what will be displayed is postman when there is an error
   }
 });
 //much more efficent way to deal with errors
