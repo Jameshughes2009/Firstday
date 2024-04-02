@@ -15,3 +15,9 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+
+// USE cars_db;
+// SELECT * FROM cars_db.driver
+// JOIN license(other variable like car for example can be add hear) where driver_id = driver.id
+// Used function above to join table
