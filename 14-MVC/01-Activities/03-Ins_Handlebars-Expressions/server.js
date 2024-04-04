@@ -20,3 +20,4 @@ app.use(require('./controllers/dish-routes'));
 app.listen(PORT, () => {
   console.log('Server listening on: http://localhost:' + PORT);
 });
+// useing handle bars will result in the web compily our templates into HTML readable code for the we broswer

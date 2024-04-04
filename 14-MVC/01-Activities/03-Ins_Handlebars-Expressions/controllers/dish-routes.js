@@ -37,7 +37,7 @@ const dishes = [
 
 //get all dishes
 router.get('/', async (req, res) => {
-  res.render('all');
+  res.render('all');//this is where the "all handlebars" file is renders. the file name much with the brackets
 });
 
 //get one dish
