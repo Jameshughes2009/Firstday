@@ -14,3 +14,4 @@ app.use(require('./controllers/dish-routes'));
 app.listen(PORT, () => {
   console.log('Server listening on: http://localhost:' + PORT);
 });
+//A helpful tip for Module 14 MVC Review - Activities 9, 15, 17, 21, Mini Project
