@@ -7,6 +7,7 @@ const dishes = [
       dish_name: 'French Bread with Brie Cheese',
       description: 'French baguette with warm brie',
       has_nuts: false,
+      dish_type: "Test"
     },
     {
       id: 2,

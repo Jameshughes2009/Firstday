@@ -17,6 +17,10 @@ Dish.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    dish_type: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     description: {
       type: DataTypes.TEXT,
       allowNull: true,
