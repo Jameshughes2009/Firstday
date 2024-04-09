@@ -15,3 +15,11 @@ app.listen(PORT, () => {
   console.log('Server listening on: http://localhost:' + PORT);
 });
 //A helpful tip for Module 14 MVC Review - Activities 9, 15, 17, 21, Mini Project
+
+// NOTES
+
+// Useful for frontend coding
+
+// we now need to add hmtl and css files in different folders
+
+// in the hmtl file we can still reference our js and css files

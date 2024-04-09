@@ -9,3 +9,5 @@ router.get('/', async (req, res) => {
 
 module.exports = router;
 // The first two instructor lesson do not invovle as much code
+
+// good references for how the files should be structured
