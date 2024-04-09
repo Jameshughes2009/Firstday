@@ -37,13 +37,13 @@ const dishes = [
 
 //get all dishes
 router.get('/', async (req, res) => {
-  res.render('all');//this is where the "all handlebars" file is renders. the file name much with the brackets
+  res.render('all');//this is where the "all handlebars" file is renders. the file name much with the brackets - all will pull the all dishs  
 });
 
 //get one dish
 router.get('/dish/:num', async (req, res) => {
   // This method renders the 'dish' template, and uses params to select the correct dish to render in the template, based on the id of the dish.
   return res.render('dish', dishes[req.params.num - 1]);
-});
+}); // this will pull one from the "dish handlebars file"
 
 module.exports = router;
