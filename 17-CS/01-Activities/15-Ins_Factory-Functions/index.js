@@ -28,3 +28,8 @@ const userOne = createUser('Beverly', 58, 'Phoenix')
 // Call the two methods attached to our `createUser` function to see if the user object is logging the correct values.
 userOne.introduceSelf()
 userOne.location()
+
+const userTwo = createUser('James', 25, 'Toronto')
+
+userTwo.introduceSelf()
+userOne.location
