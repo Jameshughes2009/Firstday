@@ -21,3 +21,4 @@ console.log(fibonacci(11));
 // alwast add the last values together
 
 // 0, 1, 2, 3, 5, 8, 13, 21, 34, 55
+//                   P7,  P8 related to fibonacci
