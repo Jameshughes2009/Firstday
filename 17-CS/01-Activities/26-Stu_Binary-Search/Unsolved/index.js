@@ -1,6 +1,7 @@
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // TODO: Why is the 'binarySearch' function not running properly??
+//but it's missing the part where it should return the index of the found element.
 function binarySearch(array, element) {
   let start = 0;
   let end = array.length - 1;
@@ -16,7 +17,7 @@ function binarySearch(array, element) {
       end = mid - 1;
     }
   }
-  return -1;
+  return -1; // Return  -1 error when elemnt is not found 
 }
 
 console.log(binarySearch(arr, 7));
