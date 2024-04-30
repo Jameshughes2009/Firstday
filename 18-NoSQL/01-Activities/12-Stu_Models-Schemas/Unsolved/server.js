@@ -12,6 +12,7 @@ app.use(express.json());
 app.get('/books', async (req, res) => {
   try {
     // TODO: Add a comment describing the functionality of the code below
+    // using model in route to find all documents that are in sitances of that model
     const result = await Book.find({});
     res.status(200).json(result);
   } catch (err) {
