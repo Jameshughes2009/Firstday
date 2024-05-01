@@ -15,9 +15,12 @@ const userSchema = new Schema(
 );
 
 // TODO: Create a virtual property `fullName` on the userSchema
-
+// userSchema = {fullName}
+userSchema.virtual('fullName').get(function () {
+  return this.fullName.length;
+});
 // TODO: Create a getter for the virtual that returns the full name of the user (first + last)
-
+router.route('/:userId').get();
 // TODO: Create a setter for the virtual that sets the value of the first and last name, given just the `fullName`
 
 // Initialize our User model
