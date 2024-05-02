@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Creates a new department
-app.post('/departments', (req, res) => {
-  const newDepartment = new Department({ name: req.body.name });
+app.post('/new-department/:department', (req, res) => {
+  const newDepartment = new Department({ name: req.params.department });
   newDepartment.save();
   if (newDepartment) {
     res.status(201).json(newDepartment);
@@ -22,7 +22,7 @@ app.post('/departments', (req, res) => {
 });
 
 // Finds all departments
-app.get('/departments', async (req, res) => {
+app.get('/all-departments', async (req, res) => {
   try {
     // Using model in route to find all documents that are instances of that model
     const result = await Department.find({});
@@ -33,11 +33,11 @@ app.get('/departments', async (req, res) => {
   }
 });
 
-// Finds the first matching document by name and returns it.
-app.get('/departments/:name', async (req, res) => {
+// Finds the first matching document
+app.get('/find-wine-department', async (req, res) => {
   try {
     // Using model in route to find all documents that are instances of that model
-    const result = await Department.findOne({ name: req.params.name });
+    const result = await Department.findOne({ name: 'Wine' });
     res.status(200).json(result);
   } catch (err) {
     console.log('Uh Oh, something went wrong');
@@ -45,10 +45,11 @@ app.get('/departments/:name', async (req, res) => {
   }
 });
 
-// Finds the first matching document by name and deletes it.
-app.delete('/departments/:name', async (req, res) => {
+// Finds first document matching parameter and deletes
+// For demo, use 'Wine' as URL param
+app.delete('/find-one-delete/:departmentName', async (req, res) => {
   try {
-    const result = await Department.findOneAndDelete({ name: req.params.name });
+    const result = await Department.findOneAndDelete({ name: req.params.departmentName });
     res.status(200).json(result);
     console.log(`Deleted: ${result}`);
   } catch (err) {

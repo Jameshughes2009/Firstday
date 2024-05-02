@@ -9,7 +9,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get('/books', async (req, res) => {
+app.get('/all-books', async (req, res) => {
   try {
     const result = await Book.find({});
     res.status(200).json(result);
@@ -18,7 +18,7 @@ app.get('/books', async (req, res) => {
   }
 });
 
-app.get('/books/sum-price', async (req, res) => {
+app.get('/sum-price', async (req, res) => {
   try {
     const result = await Book
       .aggregate([

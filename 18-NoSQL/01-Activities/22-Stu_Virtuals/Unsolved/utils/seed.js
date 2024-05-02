@@ -27,7 +27,7 @@ connection.once('open', async () => {
   }
 
   // Wait for the users to be inserted into the database
-  await User.insertMany(users);
+  await User.collection.insertMany(users);
 
   console.table(users);
   console.timeEnd('seeding complete 🌱');

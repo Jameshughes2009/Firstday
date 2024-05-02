@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Finds all departments
-app.get('/departments', async (req, res) => {
+app.get('/all-departments', async (req, res) => {
   try {
     // Using model in route to find all documents that are instances of that model
     const result = await Department.find({});

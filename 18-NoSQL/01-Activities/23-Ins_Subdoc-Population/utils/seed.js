@@ -31,7 +31,7 @@ connection.once('open', async () => {
     });
   }
 
-  await User.insertMany(users);
+  await User.collection.insertMany(users);
   console.log(users);
   process.exit(0);
 });

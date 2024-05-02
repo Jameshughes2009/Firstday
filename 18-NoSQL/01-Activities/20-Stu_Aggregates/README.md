@@ -6,11 +6,11 @@ Work with a partner to resolve the following issue:
 
 ## Expected Behavior
 
-When I test the `/books/sum-price` GET route in Insomnia, summary statistics for only books that are in stock should be returned.
+When I test the `sum-price` GET route in Insomnia, summary statistics for only books that are in stock should be returned.
 
 ## Actual Behavior
 
-When I test the `/books/sum-price` GET route in Insomnia, summary statistics for all books are returned.
+When I test the `sum-price` GET route in Insomnia, summary statistics for all books are returned.
 
 ## Steps to Reproduce the Problem
 
@@ -18,9 +18,9 @@ Follow these steps to reproduce the problem:
 
 1. Run `npm install` and `npm start` to start the app.
 
-2. Navigate to Insomnia on your local machine and test the `/books/sum-price` GET route.
+2. Navigate to Insomnia on your local machine and test the `sum-price` GET route.
 
-3. The summary data for all books are being returned. To see a list of all books for comparison, use the `/books` GET route.
+3. The summary data for all books are being returned. To see a list of all books for comparison, use the `all-books` GET route.
 
 ## Assets
 

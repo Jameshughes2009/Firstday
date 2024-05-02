@@ -79,6 +79,8 @@ const possibleResponses = [
   'Reply: The side effects of in app purchases on digital marketplaces',
 ];
 
+const users = [];
+
 // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 

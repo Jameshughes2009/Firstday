@@ -2,13 +2,13 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to implement a `PUT` route which finds a single genre document and update its name by using a Mongoose CRUD method.
+* As a developer, I want to be able to find a single document and update it by using a Mongoose CRUD method.
 
 ## Acceptance Criteria
 
-* It is done when I use a Mongoose CRUD method to select a single document with the specified `name` property and update it.
+* It is done when I use a Mongoose CRUD method to select a single document with the `name` property of `Kids` and update it.
 
-* It is done when the updated document has an updated `name` property value that matches the value provided in the request body.
+* It is done when the updated document has an updated `name` property value that matches the value provided in the route parameter.
 
 * It is done when only the `name` property has been updated in the document and no other changes have been made.
 

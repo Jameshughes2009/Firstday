@@ -38,10 +38,10 @@ connection.once('open', async () => {
   }
 
   // Add students to the collection and await the results
-  const studentData = await Student.create(students);
+  const studentData = await Student.insertMany(students);
 
   // Add courses to the collection and await the results
-  await Course.create({
+  await Course.insertOne({
     courseName: 'UCLA',
     inPerson: false,
     students: [...studentData.map(({_id}) => _id)],

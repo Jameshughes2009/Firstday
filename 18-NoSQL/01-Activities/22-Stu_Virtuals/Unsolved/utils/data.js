@@ -134,7 +134,6 @@ const getRandomName = () =>
 const getRandomUserName = () =>
   `${getRandomArrItem(names)}${Math.floor(Math.random() * 10 + 1)}`;
 
-  console.log('string', 'abc xyz'.split(' '));
 // Export the functions for use in seed.js
 module.exports = {
   getRandomName,

@@ -18,7 +18,7 @@ const applicationSchema = new Schema(
     },
     description: {
       type: String,
-      minLength: 4,
+      minLength: 15,
       maxLength: 500,
     },
     tags: [Tag],

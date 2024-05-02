@@ -18,7 +18,7 @@ const videoSchema = new Schema(
     },
     description: {
       type: String,
-      minLength: 8,
+      minLength: 15,
       maxLength: 500,
     },
     responses: [Response],

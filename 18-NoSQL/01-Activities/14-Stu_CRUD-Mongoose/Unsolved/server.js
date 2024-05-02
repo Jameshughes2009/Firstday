@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Creates a new document
-app.post('/genres', (req, res) => {
-  const newGenre = new Genre({ name: req.body.name });
+app.post('/new-genre/:genre', (req, res) => {
+  const newGenre = new Genre({ name: req.params.genre });
   newGenre.save();
   if (newGenre) {
     res.status(200).json(newGenre);
@@ -22,7 +22,7 @@ app.post('/genres', (req, res) => {
 });
 
 // Finds all documents
-app.get('/genres', async (req, res) => {
+app.get('/all-genres', async (req, res) => {
   try {
     // Using model in route to find all documents that are instances of that model
     const result = await Genre.find({});
@@ -33,10 +33,10 @@ app.get('/genres', async (req, res) => {
   }
 });
 
-// Find the first document that matches and return it.
-app.get('/genres/:name', async (req, res) => {
+// Find first document with name equal to "Kids"
+app.get('/find-kids-genre', async (req, res) => {
   try {
-    const result = await Genre.findOne({ name: req.params.name });
+    const result = await Genre.findOne({ name: 'Kids' });
     res.status(200).json(result);
   } catch (err) {
     console.log('Uh Oh, something went wrong');
@@ -44,10 +44,10 @@ app.get('/genres/:name', async (req, res) => {
   }
 });
 
-// Finds the first document that matches and deletes it.
-app.delete('/genres/:name', async (req, res) => {
+// Finds first document that matches and deletes
+app.delete('/find-one-delete/:genre', async (req, res) => {
   try {
-    const result = await Genre.findOneAndDelete({ name: req.params.name });
+    const result = await Genre.findOneAndDelete({ name: req.params.genre });
     res.status(200).json(result);
     console.log(`Deleted: ${result}`);
   } catch (err) {
@@ -56,9 +56,9 @@ app.delete('/genres/:name', async (req, res) => {
   }
 });
 
-app.put('/genres/:name', async (req, res) => {
-  // TODO: Write a route that finds the first document that matches the specified route parameter
-  // and updates it using the name provided in the request body.
+app.put('/find-one-update/:genre', async (req, res) => {
+  // TODO: Write a route that will find the first instance of a document that contains a name with the value equal to 'Kids'
+  // Update that name with the value given from the URL param
   // Return the updated document
 });
 
