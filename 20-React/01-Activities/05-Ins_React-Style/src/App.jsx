@@ -10,7 +10,9 @@ function App() {
       <Navbar />
       <Card />
       <Card />
-      <Card />
+      <Card />    
+      {/* "Header, Navbar, and Card" varible  will added the text values mutiple times when page is loaded */}
+      {/* if listed multiple times more it will repeat the content in the "Card" */}
     </div>
   );
 }
