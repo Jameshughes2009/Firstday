@@ -1,9 +1,8 @@
 // Here we are importing a CSS file as a dependency
-import '../styles/Header.css';// caiptal text for "reactfunction"
+import '../styles/Header.css';
 
 function Header() {
   return (
-    //THIS IS RECOMMENDED APPROCH
     <header className="header">
       <h1>Home</h1>
     </header>
