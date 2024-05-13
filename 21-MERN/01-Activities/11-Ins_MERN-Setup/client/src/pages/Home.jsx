@@ -9,7 +9,7 @@ const Home = () => {
   const { loading, data } = useQuery(QUERY_PROFILES);
 
   const profiles = data?.profiles || [];
-
+// data? = data.pofile[]
   return (
     <main>
       <div className="flex-row justify-center">
