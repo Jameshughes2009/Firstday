@@ -1,4 +1,4 @@
-const name = 'Mac';
+const name = 'James';
 const num1 = 1;
 const num2 = 2;
 
