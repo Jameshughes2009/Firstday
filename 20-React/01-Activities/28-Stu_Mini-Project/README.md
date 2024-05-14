@@ -48,3 +48,13 @@ Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+
+## Notes from Lessons 
+Module 20
+- port 3000 will always b used for the front and and 3001 will be backend content
+
+Mini Project 
+- Must update text to update priority
