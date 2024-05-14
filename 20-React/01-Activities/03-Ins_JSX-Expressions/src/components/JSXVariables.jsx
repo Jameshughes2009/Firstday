@@ -12,7 +12,7 @@ function JSXVariables() {
           <h2>My cat's name is {name}. But you can call me...</h2>
           <h1>The JSX Boss!</h1>
           <hr />
-          <h2>I can do math: {num1 + num2}.</h2>
+          <h2>I can do math: {num1 + num2 * 7}.</h2>
           <h2>
             I can generate random numbers:
             {Math.floor(Math.random() * 10) + 1},
