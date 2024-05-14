@@ -2,7 +2,7 @@ import ReactList from './ReactList';
 
 // React components are isolated parts of an application that help organize and isolate different parts of the program into smaller chunks
 // We can pass data to these components and even render other components inside other components.
-// The `Hello` component is a child of our `App` component and is responsible for rendering the "Hello World" header.
+// The `Hello` component is a child of our `App` component and is responsible for rendering the "Things you can do with React" header.
 function Hello() {
   const heading = 'Things you can do with React:';
 
