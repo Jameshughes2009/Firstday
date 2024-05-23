@@ -1,6 +1,6 @@
 import { CHANGE, SUBMIT } from './actions';
 
-// Name has to be letters numbers and be between 6 and 15 characters
+// Name has to be letters or numbers and be between 6 - 15 characters
 const nameRegex = /^[a-z0-9_-]{6,15}$/;
 
 export const reducer = (state, action) => {

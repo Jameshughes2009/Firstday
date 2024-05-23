@@ -18,3 +18,4 @@ export const reducer = (state, action) => {
       return state;
   }
 };
+// number 9 and 25 will be good exampls for project-3
