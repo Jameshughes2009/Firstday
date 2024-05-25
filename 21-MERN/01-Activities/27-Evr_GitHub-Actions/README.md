@@ -10,7 +10,7 @@ GitHub Actions is a great solution to this problem. For example, you could creat
 
 To begin, start by creating a boilerplate React application and putting it on Github. While you are probably already familiar with this process, let's go through it together.
 
-1. In the command line, navigate to the desired parent folder and run `npm create vite@4.4.1`.
+1. In the command line, navigate to the desired parent folder and run `npm create vite`.
 
     * 🔑 *Note*: This command will automatically create a sub-folder which will house your React application; you do not need to perform a `mkdir` command to create one manually.
 
@@ -34,7 +34,7 @@ To begin, start by creating a boilerplate React application and putting it on Gi
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-        "eslint": "eslint src"
+    "eslint": "eslint src"
     },
     ```
 
@@ -75,43 +75,43 @@ The folder structure should look something like this:
 
 ## Actions
 
-Our actions will be defined inside of our `main.yml` file. To begin, let's open up `main.yml` in our code editor. YAML is a recursive acronym that stands for "YAML Ain't Markup Language". YAML is human-readable syntax for data that is being stored or transmitted.
+Our actions will be defined inside of our `main.yml` file. To begin, let's open up `main.yml` in our code editor. YAML is a recursive acronym that stands for "YAML Ain't Markup Language". YAML is human-readable syntax for data that is being stored or transmitted. Indentation and whitespace are important in YAML. Using spaces instead of tabs for indentation is encouraged.
 
 * Note that the first part of this file simply gives a name to our workflow. The `on` portion specifies what should trigger the workflow. We also want our actions to run whenever someone creates a pull request to the `dev` or `main` branches.
 
 * Next we specify the `jobs` that can run sequentially or in parallel. We are specifying that we want our job `test` to run on a container that uses Ubuntu as it's operating system. This container will be spun up by GitHub when our workflow is invoked.
 
-* The `steps` section contains what actions or tasks we want to run on our container. In our case we are checking out the branch, using node v12, installing dependencies, and finally running our `eslint` script.
+* The `steps` section contains what actions or tasks we want to run on our container. In our case we are checking out the branch, using node v20, installing dependencies, and finally running our `eslint` script.
 
     ```yml
     #  Name of workflow
     name: Lint workflow
     # Trigger workflow on all pull requests
     on:
-        pull_request:
-            branches:
-                - dev
-                - main
+      pull_request:
+        branches:
+          - dev
+          - main
     # Jobs to carry out
     jobs:
-        test:
-            # Operating system to run job on
-            runs-on: ubuntu-latest
-            # Steps in job
-            steps:
-                # Get code from repo
-                - name: Checkout code
-                uses: actions/checkout@v1
-                # Install NodeJS
-                - name: Use Node.js 12.x
-                uses: actions/setup-node@v1
-                with:
-                    node-version: 12.x
-                # Build the app
-                - name: 🧰 install deps
-                run: npm install
-                - name: Run lint
-                run: npm run lint
+      test:
+        # Operating system to run job on
+        runs-on: ubuntu-latest
+        # Steps in job
+        steps:
+          # Get code from repo
+          - name: Checkout code
+            uses: actions/checkout@v4
+          # Install NodeJS
+          - name: Use Node.js 20.x
+            uses: actions/setup-node@v4
+            with:
+              node-version: 20.x
+          # Build the app
+          - name: 🧰 install deps
+            run: npm install
+          - name: Run lint
+            run: npm run lint
     ```
 
 * Save the content of the snippet above to your `main.yml` file, then add and commit all your files and push them to Github on the main branch

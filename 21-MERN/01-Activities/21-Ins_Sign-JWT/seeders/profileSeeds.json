@@ -15,7 +15,7 @@
     "name": "Amiko",
     "email": "amiko@techfriends.dev",
     "password": "password03",
-    "skills": ["NodeJS", "MySQL", "MongoDB", "React", "CSS-in-JS"]
+    "skills": ["NodeJS", "PostgreSQL", "MongoDB", "React", "CSS-in-JS"]
   },
   {
     "name": "Kent Beck",

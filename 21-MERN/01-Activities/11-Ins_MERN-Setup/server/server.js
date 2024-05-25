@@ -42,4 +42,3 @@ const startApolloServer = async () => {
 };
 
 startApolloServer();
-// use comand line function npm run devlop to turn on 3000 port!!!!!!!!

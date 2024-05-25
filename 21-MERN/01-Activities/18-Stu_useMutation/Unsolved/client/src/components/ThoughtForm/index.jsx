@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 
 import { ADD_THOUGHT } from '../../utils/mutations';
-import { QUERY_PROFILES } from '../../utils/queries';
+import { QUERY_THOUGHTS } from '../../utils/queries';
 
 const ThoughtForm = () => {
   const [formState, setFormState] = useState({
@@ -16,8 +16,8 @@ const ThoughtForm = () => {
   const [addThought, { error }] = useMutation
   (ADD_THOUGHT, {
     refetchQueries: [
-      QUERY_PROFILES,
-      'allProfiles'
+      QUERY_THOUGHTS,
+      'getThoughts'
     ]
   });
 
