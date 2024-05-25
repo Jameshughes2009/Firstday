@@ -9,7 +9,7 @@ const professorData = require('./professorData.json');
 db.once('open', async () => {
   await cleanDB("School", "schools");
   await cleanDB("Class", "classes");
-  await cleanDB("Professor", "professors");
+  await cleanDB("Professor", "professors");// used to stop duplicates
 
   const schools = await School.create(schoolData);
   const classes = await Class.create(classData);

@@ -4,6 +4,9 @@ const resolvers = {
   Query: {
     classes: async () => {
       return await Class.find({});
+    },
+    classHours: async () => {
+      return await Class.find({});
     }
   }
 };
