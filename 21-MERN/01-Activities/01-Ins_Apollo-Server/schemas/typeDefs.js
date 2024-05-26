@@ -9,6 +9,7 @@ const typeDefs = `
   type ClassHours {
     _id: ID
     creditHours: Int
+    professor: ID
   }
 
   type Query {
