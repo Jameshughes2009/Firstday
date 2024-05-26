@@ -7,6 +7,9 @@ const resolvers = {
     },
     classHours: async () => {
       return await Class.find({});
+    },
+    classHoursOne: async (parent, args) => {
+      return await Class.findById(args.id);
     }
   }
 };

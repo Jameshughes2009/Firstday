@@ -14,6 +14,7 @@ const typeDefs = `
   type Query {
     classes: [Class]
     classHours: [ClassHours]
+    classHoursOne(id: ID!): ClassHours
   }
 `;
 
