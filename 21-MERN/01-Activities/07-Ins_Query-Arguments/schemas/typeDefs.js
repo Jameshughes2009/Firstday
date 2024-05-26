@@ -34,3 +34,4 @@ const typeDefs = `
 `;
 
 module.exports = typeDefs;
+// rountes and models can be compared and thought of a resolvers and TypeDefs for graphsql
