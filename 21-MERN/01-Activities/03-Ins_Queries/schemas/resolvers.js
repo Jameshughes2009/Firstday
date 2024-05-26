@@ -1,5 +1,5 @@
 const { School, Class, Professor } = require('../models');
-
+// .populate is used to display info in graphsql
 const resolvers = {
   Query: {
     schools: async () => {

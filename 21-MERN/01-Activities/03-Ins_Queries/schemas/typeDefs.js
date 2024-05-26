@@ -29,5 +29,6 @@ const typeDefs = `
     professors: [Professor]
   }
 `;
+// infomation you what to see has to always be in typeDefs.js file!!!
 
 module.exports = typeDefs;
